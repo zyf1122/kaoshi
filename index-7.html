@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+      }
+
+      ul,li{
+        list-style-type: none;
+      }
+
+      .main {
+        margin:5px;
+      }
+
+      .main .left{
+        width:200px;
+        height:40px;
+        line-height: 40px;
+        background: #c60c1d;
+        text-indent: 1em;
+        border-bottom: 1px dotted #eee;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .main li a{
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .main .de{
+        float: right;
+        color: #fff;
+        padding-right: 10px;
+      }
+
+      .main .left{
+        position:relative;
+      }
+
+      .main .right{
+        width: 180px;
+        position:absolute;
+        top:0;
+        left: 200px;
+        border: 1px solid #ddd;
+        display: none;
+      }
+
+      .main .right li{
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        text-align: center;
+        /*background: red;*/
+        float: left;
+      }
+
+      .main .right li a{
+        color: #000;
+      }
+
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $('.left').hover(function(){
+          $(this).children('ul').css('display','block');
+        },function(){
+          $(this).children('ul').css('display','none');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <ul>
+        <li class="left"><a href="#">珠宝玉器</a><i class="de"> > </i>
+
+            <ul class="right">
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+            </ul>
+
+        </li>
+        <li class="left"><a href="#">珠宝玉器</a><i class="de"> > </i>
+
+            <ul class="right">
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+            </ul>
+
+        </li>
+        <li class="left"><a href="#">珠宝玉器</a><i class="de"> > </i>
+
+            <ul class="right">
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+            </ul>
+
+        </li>
+        <li class="left"><a href="#">珠宝玉器</a><i class="de"> > </i>
+
+            <ul class="right">
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+            </ul>
+
+        </li>
+        <li class="left"><a href="#">珠宝玉器</a><i class="de"> > </i>
+
+            <ul class="right">
+              <li><a href="#">宝玉</a></li>
+              <li><a href="#">宝玉</a></li>
+            </ul>
+
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
